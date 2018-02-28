@@ -1,0 +1,67 @@
+@font-face {
+font-family: "GT Walsheim";
+src: url(fonts/GT-Walsheim-Regular.ttf);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: grid;
+
+  font-family: "GT Walsheim";
+
+  background-image: url("images/ferrisWheel.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#navbar {
+  display: grid;
+  grid-template-columns: 200px repeat(4, 150px) auto;
+  grid-template-rows: 15vh;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#name {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  color: white;
+  font-size: 30px;
+  justify-self: center;
+  align-self: end;
+  /* grid-row-start: 0;
+  grid-row-end: 1; */
+}
+
+#home, #about, #professional, #personal {
+  color: white;
+  font-size: 20px;
+  justify-self: center;
+  align-self: end;
+
+  border-bottom: solid 5px white;
+}
+
+#home {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#about {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+#professional {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+#personal {
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
